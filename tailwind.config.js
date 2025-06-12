@@ -54,7 +54,13 @@ module.exports = {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			}
-  		}
+  		},
+      fontFamily: {
+        geistSans: 'var(--font-geist-sans)',
+      },
+	  backgroundImage: {
+		herobg: 'url("/herobg7.jpg")',
+	  },
   	}
   },
   plugins: [require("tailwindcss-animate")],
