@@ -1,19 +1,16 @@
 import React from 'react'
+import { BentoGridDemo } from '../bento-grid-demo'
 
 export default function TechStack() {
 
   return (
-    <>
-      <div className="h-[108vh] bg-zinc-800 bg-cover bg-center ">
-        <div className="h-full flex items-center justify-center text-white">
-          <h1 className="text-5xl font-bold">Parallax Background</h1>
+
+      <div className="h-[108vh] bg-gray-900 bg-cover bg-center ">
+        <div className="h-full flex flex-col items-center text-white">
+          <h1 className="text-5xl m-32 mb-16 font-bold">My TechStack</h1>
+          <BentoGridDemo />
         </div>
       </div>
-
-      <div className="h-screen bg-white text-black flex items-center justify-center">
-        <p>Scroll to see the parallax effect!</p>
-      </div>
-    </>
   )
 }
 

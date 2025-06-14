@@ -26,7 +26,7 @@ export default function HomePage() {
         style={{y}}
         className="absolute inset-0 bg-herobg bg-cover bg-center z-0"
       />
-      <div className="absolute inset-0 backdrop-blur-sm bg-black/30 z-10"/>
+      <div className="absolute inset-0 backdrop-blur-sm bg-black/30 z-10"/> {/* Blur div */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
