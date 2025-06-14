@@ -13,7 +13,7 @@ import {
 
 export function BentoGridDemo() {
   return (
-    <BentoGrid className="w-full border border-red-900">
+    <BentoGrid className="w-full">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}

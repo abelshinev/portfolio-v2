@@ -60,6 +60,7 @@ module.exports = {
       },
 	  backgroundImage: {
 		herobg: 'url("/herobg7.jpg")',
+		tsbg: 'url("/techstackbg.png")',
 	  },
   	}
   },
