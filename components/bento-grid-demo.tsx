@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
+import Image from "next/image";
 import {
   IconArrowWaveRightUp,
   IconBoxAlignRightFilled,
@@ -19,53 +20,110 @@ export function BentoGridDemo() {
           key={i}
           title={item.title}
           description={item.description}
-          header={item.header}
-          icon={item.icon}
-          className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+          header={<Skeleton imgLink={item.imgLink} title={item.title} icon={item.icon}/>}
         />
       ))}
     </BentoGrid>
   );
 }
-const Skeleton = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
-);
+const Skeleton = ({ imgLink, title, icon }: { imgLink?: string, title?: string, icon?: string }) => {
+  if (!imgLink) {
+    return <div className="relative flex flex-1 w-full h-[13vh] min-h-[6rem] rounded-sm bg-neutral-100"></div>
+  }
+  return (
+    <div className="flex flex-1 w-full h-[13vh] min-h-[6rem] rounded-sm bg-neutral-100">
+        <Image 
+          src={imgLink}
+          alt="tech logo"
+          width={600}
+          height={500}
+          className="object-cover"
+        />
+        {icon && <Image 
+          src={icon}
+          alt="icon"
+          width={80}
+          height={80}
+          className="absolute right-20 bottom-20"
+        />}
+        <h1 className="absolute bottom-10 right-10 text-white text-sm md:text-4xl font-semibold z-10">{title}</h1>
+        
+    </div>
+  );
+
+}
 const items = [
   {
-    title: "The Dawn of Innovation",
+    title: "Python",
     description: "Explore the birth of groundbreaking ideas and inventions.",
     header: <Skeleton />,
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    icon: "/tech/icons/python.png",
+    imgLink: "/tech/python.png"
   },
   {
-    title: "The Digital Revolution",
+    title: "C++",
     description: "Dive into the transformative power of technology.",
     header: <Skeleton />,
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    icon: "/tech/icons/cpp.png",
+    imgLink: "/tech/cpp.png"
   },
   {
-    title: "The Art of Design",
+    title: "JavaScript",
     description: "Discover the beauty of thoughtful and functional design.",
     header: <Skeleton />,
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+    icon: "/tech/icons/javascript.png",
+    imgLink: "/tech/javascript.png"
   },
   {
-    title: "The Power of Communication",
+    title: "GitHub",
     description:
-      "Understand the impact of effective communication in our lives.",
+    "Understand the impact of effective communication in our lives.",
     header: <Skeleton />,
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+    icon: "/tech/icons/git.png",
+    imgLink: "/tech/git.png",
   },
   {
-    title: "The Pursuit of Knowledge",
+    title: "ThreeJS",
     description: "Join the quest for understanding and enlightenment.",
     header: <Skeleton />,
-    icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
+    icon: "/tech/icons/threejs.png",
+    imgLink: "/tech/threejs.png",
+    
   },
   {
-    title: "The Joy of Creation",
+    title: "NextJS",
     description: "Experience the thrill of bringing ideas to life.",
     header: <Skeleton />,
-    icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
+    icon: "/tech/icons/nextjs.png",
+    imgLink: "/tech/nextjs.png",
+  },
+  {
+    title: "TypeScript",
+    description: "Experience the thrill of bringing ideas to life.",
+    header: <Skeleton />,
+    icon: "",
+    imgLink: "/tech/typescript.png",
+  },
+  {
+    title: "Express",
+    description: "Discover the beauty of thoughtful and functional design.",
+    header: <Skeleton />,
+    icon: "/tech/icons/expressjs.png",
+    imgLink: "/tech/express.png",
+
+  },
+  {
+    title: "TypeScript",
+    description: "Experience the thrill of bringing ideas to life.",
+    header: <Skeleton />,
+    icon: "/tech/icons/typescript.png",
+    imgLink: "/tech/typescript.png",
+  },
+  {
+    title: "Java",
+    description: "Experience the thrill of bringing ideas to life.",
+    header: <Skeleton />,
+    icon: "/tech/icons/java.png",
+    imgLink: "/tech/java.png",
   },
 ];
