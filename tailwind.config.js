@@ -63,6 +63,7 @@ module.exports = {
 		tsbg: 'url("/techstackbg.png")',
 		speckles: 'url("/overlay.png")',
 		sideImage: 'url("/focus1.png")',
+		me: 'url("/me.png")',
 	  },
   	}
   },

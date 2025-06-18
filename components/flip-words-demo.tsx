@@ -6,7 +6,7 @@ export default function FlipWordsDemo() {
 
   return (
     <div className="flex flex-row justify-start ">
-      <div className="text-6xl text-neutral-600 dark:text-neutral-200 font-bold">
+      <div className="text-7xl text-neutral-600 dark:text-neutral-200 font-bold">
         I am a <FlipWords words={words} /> <br />
         
       </div>
