@@ -61,6 +61,8 @@ module.exports = {
 	  backgroundImage: {
 		herobg: 'url("/herobg7.jpg")',
 		tsbg: 'url("/techstackbg.png")',
+		speckles: 'url("/overlay.png")',
+		sideImage: 'url("/focus1.png")',
 	  },
   	}
   },

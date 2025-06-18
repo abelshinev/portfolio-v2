@@ -31,9 +31,9 @@ export default function HomePage() {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-left space-y-4 w-[50vw] z-20"
+        className="text-left space-y-4  z-20"
       >
-        <h1 className="text-8xl font-bold"> Hi. I&apos;m Abel</h1>
+        <h1 className="text-[8vw] font-bold border-2"> HI. I AM ABEL</h1>
         <FlipWordsDemo />
         <p className="text-lg text-zinc-400">
           Showcasing my projects, skills, and passion.
@@ -47,9 +47,7 @@ export default function HomePage() {
             </Button>
         </motion.div>
       </motion.div>
-      <div className="z-10">
-        <div className="w-[360px] h-[60vh] bg-white border m-3 " />
-      </div>
+
     </motion.main>
   );
 }
