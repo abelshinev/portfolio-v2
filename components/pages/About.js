@@ -21,7 +21,7 @@ export default function About() {
           <h1 className='text-7xl font-bold h-[9vh] relative  ml-5 mt-10 z-10'>About Me</h1>
           <p className='relative text-2xl py-5 z-10'>I&apos;m a self-taught <b>Full-stack Developer</b> and a Junior-year Computer Science student at IIITDM Jabalpur. I have over a year of experience in UI/UX and Web Dev and currently diving into the field of AI/ML.</p>
         </motion.div>
-        <div className='border-3 border-blue-600 bg-blue-700 w-[30vw] h-[70vh]'>
+        <div className='border-3 border-blue-600 bg-blue-700 w-[30vw] h-[70vh]' style={{ boxShadow: `0 5px 15px 1px rgba(0, 0, 0, 0.5)`}}>
 
         </div>
       </div>
