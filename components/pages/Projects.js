@@ -34,11 +34,11 @@ export default function Projects() {
           <motion.li
             ref={ref}
             key={i}
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0.1, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 1 + 0.3 * i }}
-            className="w-[80vw] h-[40vh] mx-auto flex items-center gap-6 border p-4 relative"
+            transition={{ duration: 0.6, delay: 1+ 0.3 * i }}
+            className="w-[80vw] h-[40vh] mx-auto flex items-center gap-6 p-4 relative"
           >
             <div className="w-[25vw] h-[30vh] bg-zinc-700 rounded-md overflow-hidden relative">
               {/* Replace with Image if needed */}
@@ -49,11 +49,11 @@ export default function Projects() {
                 fill
               />
             </div>
-            <div className="space-y-2 absolute right-12 w-[10vw] border">
-              <h2 className="text-2xl font-bold">{project.name}</h2>
-              <p className="text-sm text-zinc-400">{project.desc}</p>
-              <p className="text-xs text-zinc-500">Created: {project.time}</p>
-              <a href={project.repo} className="text-blue-400 underline text-sm">View on GitHub</a>
+            <div className="space-y-2 absolute right-12 w-[40vw] ">
+              <h2 className="text-5xl font-bold py-3">{project.name}</h2>
+              <p className="text-lg text-zinc-400">{project.desc}</p>
+              <p className="text-md text-zinc-500 pb-2">Duration: {project.time}</p>
+              <a href={project.repo} className="text-blue-400 underline text-lg">View on GitHub</a>
             </div>
           </motion.li>
         ))}
