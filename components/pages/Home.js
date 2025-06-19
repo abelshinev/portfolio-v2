@@ -8,42 +8,16 @@ import { glow, glowTransition, trans } from '@/lib/transitons'
 
 export default function HomePage() {
 
-  const underlineVariants = {
-    initial: { width: 0 },
-    hover: { width: "100%", transition: { duration: 0.3, ease: "easeOut" } },
-  };
-
   return (
 
     <motion.main 
+      id=""
       className="relative min-h-screen overflow-hidden text-white flex flex-row items-between justify-center p-8 "
     >
       <motion.div
         className="absolute inset-0 bg-black bg-cover bg-center z-0"
       />
-      <div className="absolute  w-full h-20 top-0 text-white text-[1.2vw] px-[2vw] flex items-center"> {/* NAVBAR */}
-        <h1>Made with NEXT JS </h1>
-        <ul className="flex flex-row flex-end w-[20vw] absolute right-0 justify-evenly">
-          {
-            ["About", "Tech", "Projects"].map((text, i) => (
-              <motion.li key={i}            
-                className="relative cursor-pointer"
-                whileHover="hover"
-                initial="initial"
-                animate="initial"
-                transition={trans}
-              >
-                <a href={`#${text.toLowerCase()}`}>{text}</a>
-                <motion.div
-                  variants={underlineVariants}
-                  className="absolute left-0 -bottom-1 h-[2px] bg-white"
-                />
-              </motion.li>
-            ))
-          }
-          
-        </ul>
-      </div>
+      
 
       {/* The rising object */}
       <motion.div
@@ -58,7 +32,7 @@ export default function HomePage() {
       ><h1>ABEL SHINE</h1></motion.div>                {/* Splash Name */}
       <motion.div
         initial={{ scaleX: 0 }}
-        whileInView={{ scaleX: 1 }} 
+        animate={{ scaleX: 1 }} 
         transition={{
           duration: 0.6, 
           ease: "easeOut" 
@@ -80,7 +54,8 @@ export default function HomePage() {
             whileHover={{y: -10}} className="w-8"
         >                                         {/* For the Projects hotkey */}
             <Button className="mt-4 hover:bg-zinc-900 transition-colors">
-            <LucideRocket className="mr-2 h-5 w-5" /> View Projects
+              <LucideRocket className="mr-2 h-5 w-5" /><a href="#projects"> View Projects </a>
+             
             </Button>
         </motion.div>
         <div className=" w-1/3 h-10 right-3 bottom-5 absolute"

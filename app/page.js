@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <div className="font-geistSans">
       <HomePage />
-      <About id="about" />
-      <TechStack id="tech" />
-      <Projects id="projects" />
+      <About />
+      <TechStack />
+      <Projects />
     </div>
   );
 }

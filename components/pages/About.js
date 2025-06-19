@@ -9,12 +9,13 @@ export default function About({ id }) {
 
 
   return (
-    <div id ={id} className='h-[110vh] w-full bg-gray-900 z-1' >
+    <div id ="about" className='h-[110vh] w-full bg-gray-900 z-1' >
       <div className='h-[110vh] flex justify-center items-center bg-speckles bg-cover text-white gap-20 z-1' >
         <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 40 }}
-        animate={ inView ? { opacity: 1, y: 0 } : {}}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.2, type: "spring", damping: 14, stiffness: 80, ease: "easeOut" }}
         
         className='relative flex flex-col  p-10 h-[60vh] w-[40vw] z-10'>
