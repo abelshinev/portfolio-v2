@@ -46,7 +46,7 @@ const Skeleton = ({ imgLink, title, icon }: { imgLink?: string, title?: string, 
           height={80}
           className="absolute right-20 bottom-20"
         />}
-        <h1 className="absolute bottom-10 right-10 text-white text-sm md:text-4xl font-semibold z-10">{title}</h1>
+        <h1 className="absolute bottom-10 right-8 text-white text-center w-[10vw] text-sm md:text-4xl font-semibold z-10">{title}</h1>
         
     </div>
   );
@@ -61,7 +61,7 @@ const items = [
     imgLink: "/tech/python.png"
   },
   {
-    title: "C++",
+    title: "C++  ",
     description: "Dive into the transformative power of technology.",
     header: <Skeleton />,
     icon: "/tech/icons/cpp.png",
@@ -80,7 +80,7 @@ const items = [
     "Understand the impact of effective communication in our lives.",
     header: <Skeleton />,
     icon: "/tech/icons/git.png",
-    imgLink: "/tech/git.png",
+    imgLink: "/tech/git2.png",
   },
   {
     title: "ThreeJS",
