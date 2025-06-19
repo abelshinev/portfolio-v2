@@ -53,7 +53,7 @@ export default function Footer() {
                     <h2 className="text-5xl font-semibold mb-4">Get in Touch</h2>
                     <p className="text-lg font-normal text-gray-300">Let&apos;s get connected, reach out to me with my links.</p>
                     <p className="text-lg font-light mt-12 text-white">
-                        <a href="mailto:you@example.com?subject=Hello&body=I'd like to connect.">abelshinevarghese@gmail.com</a>
+                        <a href="mailto:abelshinevarghese@gmail.com?subject=Hello&body=I'd like to connect.">abelshinevarghese@gmail.com</a>
                     </p>
                     <p className="text-md font-light text-gray-300">+91 7898670716</p>
                 </div>
@@ -67,6 +67,9 @@ export default function Footer() {
                         </li>
                         <li className='text-xl text-white/70 hover:text-white transition duration-300'>
                             <a href='https://open.spotify.com/user/8z9w865lusgp7bzbsyyaznb05'>Spotify</a>
+                        </li>
+                        <li className='text-xl text-white/70 hover:text-white transition duration-300'>
+                            <a href='/resume_final_uae.pdf' target='_blank'>Resume</a>
                         </li>
                     </ul>
                 </div>

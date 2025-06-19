@@ -57,14 +57,15 @@ module.exports = {
   		},
       fontFamily: {
         geistSans: 'var(--font-geist-sans)',
-		
+
       },
 	  backgroundImage: {
 		herobg: 'url("/herobg7.jpg")',
 		tsbg: 'url("/techstackbg.png")',
 		speckles: 'url("/overlay.png")',
 		sideImage: 'url("/focus1.png")',
-		me: 'url("/me.png")',
+		me: 'url("/about/me.png")',
+		
 	  },
   	}
   },

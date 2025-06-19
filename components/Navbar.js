@@ -2,6 +2,12 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { trans } from '@/lib/transitons';
+import { Inter } from 'next/font/google';
+
+const inter = Inter({
+    subsets: ['latin'],
+    weight: ["300", "400", "500", "600", "700", "800", "900"]
+})
 
 export default function Navbar() {
 
@@ -12,7 +18,7 @@ export default function Navbar() {
 
   return (
     
-    <div className="fixed  w-full h-20 top-0 text-white text-[1.2vw] px-[2vw] flex items-center z-30"> {/* NAVBAR */}
+    <div className={`fixed  w-full h-20 top-0 text-white ${inter.className} text-[1.2vw] px-[2vw] flex items-center z-30`}> {/* NAVBAR */}
         <h1><a href='#'>Coverslide</a> </h1>
         <ul className="flex flex-row flex-end w-[20vw] absolute right-0 justify-evenly">
           {
