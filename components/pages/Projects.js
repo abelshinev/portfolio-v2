@@ -29,7 +29,7 @@ export default function Projects() {
       </motion.div>
 
       {/* Project Cards */}
-      <ul className="mt-24 space-y-8 pb-20">
+      <ul className="mt-24 space-y-8 pb-64">
         {projects.map((project, i) => (
           <motion.li
             ref={ref}

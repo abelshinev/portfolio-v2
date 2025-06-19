@@ -4,9 +4,17 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { LucideRocket } from "lucide-react";
 import FlipWordsDemo from "../flip-words-demo";
 import { glow, glowTransition, trans } from '@/lib/transitons'
+import { Inter_Tight } from "next/font/google";
 
+
+const inter = Inter_Tight({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800" ], // Adjust as needed
+});
 
 export default function HomePage() {
+
+
 
   return (
 
@@ -28,7 +36,7 @@ export default function HomePage() {
           damping: 14,
           delay: 0.4
         }}
-        className="absolute top-16 text-[16vw] text-center font-semibold transform -translate-x-1/2 w-full h-[30vh] bg-black z-10"
+        className={`absolute top-16 text-[16vw] text-center ${inter.className} font-light transform -translate-x-1/2 w-full h-[30vh] bg-black z-10`}
       ><h1>ABEL SHINE</h1></motion.div>                {/* Splash Name */}
       <motion.div
         initial={{ scaleX: 0 }}

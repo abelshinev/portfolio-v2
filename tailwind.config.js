@@ -57,6 +57,7 @@ module.exports = {
   		},
       fontFamily: {
         geistSans: 'var(--font-geist-sans)',
+		
       },
 	  backgroundImage: {
 		herobg: 'url("/herobg7.jpg")',
