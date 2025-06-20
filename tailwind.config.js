@@ -56,8 +56,11 @@ module.exports = {
   			}
   		},
       fontFamily: {
-        geistSans: 'var(--font-geist-sans)',
-
+        sans: ["var(--font-montserrat)"],
+        geist: ["var(--font-geist-sans)"],
+        mono: ["var(--font-geist-mono)"],
+        grotesk: ["var(--font-space-grotesk)"],
+		inter: ["var(--font-inter)"],
       },
 	  backgroundImage: {
 		herobg: 'url("/herobg7.jpg")',

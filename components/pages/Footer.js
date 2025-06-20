@@ -1,7 +1,6 @@
 'use client'
 import { useEffect, useState, useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-
 export default function Footer() {
   const [showFooter, setShowFooter] = useState(false)
 
@@ -27,7 +26,7 @@ export default function Footer() {
     const links = [{name: "Splash", to: "#"},{name: "About", to: "#about"},{name: "Tech", to: "#tech"},{name: "Projects", to: "#projects"}]
 
   return (
-    <section id="contact" ref={ref} className="relative z-40 bg-zinc-900 text-white px-10 py-20">
+    <section id="contact" ref={ref} className={`relative z-40 font-geist bg-zinc-900 text-white px-10 py-20`}>
         <motion.div
             initial={{ y: "100%" }}
             animate={{ y: showFooter ? "0%" : "100%" }}

@@ -9,7 +9,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
-const inter = Archivo({
+const archivo = Archivo({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"], // Adjust as needed
 });
@@ -38,7 +38,7 @@ export default function HomePage() {
           damping: 14,
           delay: 0.4
         }}
-        className={`absolute top-16 text-[16vw] text-center ${inter.className} font-medium z-10 w-full h-[30vh]`}
+        className={`absolute top-16 text-[16vw] text-center ${archivo.className} tracking-tight font-medium z-10 w-full h-[30vh]`}
       ><h1>ABEL SHINE</h1></motion.div>                {/* Splash Name */}
       <motion.div
         initial={{ scaleX: 0 }}

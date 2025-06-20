@@ -16,7 +16,7 @@ export default function Projects() {
         whileInView={{ y: 0, opacity: 1 } }
         viewport={{ once: true }} 
         transition={{ type: "spring", damping: 12, stiffness: 50, duration: 0.5, ease: "easeOut", delay: 0.2 }}
-        className="font-semibold text-center"
+        className="font-semibold font-geist text-center"
       >
         <motion.h1
           initial={{ fontSize: "2rem" }}

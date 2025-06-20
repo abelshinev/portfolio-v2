@@ -13,6 +13,9 @@ import {
 } from "@tabler/icons-react";
 
 export function BentoGridDemo() {
+
+  
+
   return (
     <BentoGrid className="w-full">
       {items.map((item, i) => (

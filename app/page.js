@@ -13,7 +13,7 @@ export default function Home() {
   const isContactInView = useInView(contactRef, { threshold: 0.3 })
 
   return (
-    <div className="font-geistSans">
+    <div className="font-inter">
       {isContactInView && (
         <div className="fixed top-0 left-0 w-full h-full backdrop-blur-md bg-black/20 z-30 pointer-events-none transition-opacity duration-500" />
       )}
