@@ -9,7 +9,7 @@ export default function Projects() {
   const ref = useRef(null);
 
   return (
-    <section id="projects" className="min-h-screen bg-zinc-950 text-white pt-20 px-10">
+    <section id="projects" className="min-h-screen bg-zinc-950 text-white pt-20 px-4 md:px-10">
       <motion.div
         ref={ref}
         initial={{ y: 300, opacity: 0 }} // ~text-4xl
@@ -20,16 +20,15 @@ export default function Projects() {
       >
         <motion.h1
           initial={{ fontSize: "2rem" }}
-          animate={{fontSize: "6rem"}}
+          animate={{fontSize: "clamp(2rem, 8vw, 6rem)"}}
           transition={{ delay: 0.45, duration: 0.3, ease: "easeOut", type: "spring", stiffness: 50, damping: 12}}
         >
-
           My Projects
         </motion.h1>
       </motion.div>
 
       {/* Project Cards */}
-      <ul className="mt-24 space-y-8 pb-64">
+      <ul className="mt-12 md:mt-24 space-y-8 pb-32 md:pb-64">
         {projects.map((project, i) => (
           <motion.li
             ref={ref}
@@ -38,9 +37,9 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 1+ 0.3 * i }}
-            className="w-[80vw] h-[40vh] mx-auto flex items-center gap-6 p-4 relative"
+            className="w-full md:w-[80vw] h-auto md:h-[40vh] mx-auto flex flex-col md:flex-row items-center gap-4 md:gap-6 p-4 relative"
           >
-            <div className="w-[25vw] h-[30vh] bg-zinc-700 rounded-md overflow-hidden relative">
+            <div className="w-full md:w-[25vw] h-[30vh] md:h-[30vh] bg-zinc-700 rounded-md overflow-hidden relative order-1 md:order-1">
               {/* Replace with Image if needed */}
               <Image  
                 src={project.imgLink} 
@@ -49,11 +48,11 @@ export default function Projects() {
                 fill
               />
             </div>
-            <div className="space-y-2 absolute right-12 w-[40vw] ">
-              <h2 className="text-5xl font-bold py-3">{project.name}</h2>
-              <p className="text-lg text-zinc-400">{project.desc}</p>
-              <p className="text-md text-zinc-500 pb-2">Duration: {project.time}</p>
-              <a href={project.repo} className="text-blue-400 underline text-lg">View on GitHub</a>
+            <div className="space-y-2 w-full md:absolute md:right-12 md:w-[40vw] order-2 md:order-2 text-center md:text-left">
+              <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold py-3">{project.name}</h2>
+              <p className="text-base md:text-lg text-zinc-400">{project.desc}</p>
+              <p className="text-sm md:text-md text-zinc-500 pb-2">Duration: {project.time}</p>
+              <a href={project.repo} className="text-blue-400 underline text-base md:text-lg">View on GitHub</a>
             </div>
           </motion.li>
         ))}
