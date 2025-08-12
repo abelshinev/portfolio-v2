@@ -16,9 +16,15 @@ export const BentoGrid = ({
 
   return (
     <div className={cn("flex flex-col gap-8 overflow-x-hidden overflow-y-hidden", className)}>
-      <div className="flex gap-3 translate-x-[-3%]">{row1}</div>
-      <div className="flex gap-3 translate-x-[-18%]">{row2}</div>
-      <div className="flex gap-3 translate-x-[-5%]">{row3}</div>
+      {/* Mobile: Show all items in a single column */}
+      <div className="flex flex-col gap-4 md:hidden">
+        {rows}
+      </div>
+      
+      {/* Desktop: Original 3-row layout */}
+      <div className="hidden md:flex gap-3 translate-x-[-3%]">{row1}</div>
+      <div className="hidden md:flex gap-3 translate-x-[-18%]">{row2}</div>
+      <div className="hidden md:flex gap-3 translate-x-[-5%]">{row3}</div>
     </div>
   );
 };
@@ -39,11 +45,11 @@ export const BentoGridItem = ({
   imgLink?: React.ReactNode;
 }) => {
   return (
-    <div className=" mx-5 flex justify-center ">
+    <div className="mx-5 flex justify-center">
 
       <div
         className={cn(
-          `group/bento row-span-1 flex flex-col justify-between rounded-sm bg-white/15 backdrop-blur-md p-5 shadow-lg transition duration-200 hover:shadow-2xl h-[42vh] w-[32vw] dark:bg-blue-100`
+          `group/bento row-span-1 flex flex-col justify-between rounded-sm bg-white/15 backdrop-blur-md p-5 shadow-lg transition duration-200 hover:shadow-2xl h-[15vh] md:h-[42vh] w-full md:w-[32vw] dark:bg-blue-100`
         )}
       >
         {header} 

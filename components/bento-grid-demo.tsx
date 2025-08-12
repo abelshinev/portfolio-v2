@@ -38,18 +38,18 @@ const Skeleton = ({ imgLink, title, icon }: { imgLink?: string, title?: string, 
         <Image 
           src={imgLink}
           alt="tech logo"
-          width={400}
-          height={300}
+          width={600}
+          height={500}
           className="object-cover"
         />
         {icon && <Image 
           src={icon}
           alt="icon"
-          width={60}
-          height={60}
-          className="absolute right-20 bottom-20"
+          width={80}
+          height={80}
+          className="absolute right-8 md:right-20 bottom-8 md:bottom-20 w-8 h-8 md:w-20 md:h-20"
         />}
-        <h1 className="absolute bottom-10 right-8 text-white text-center w-[10vw] text-sm md:text-4xl font-semibold z-10">{title}</h1>
+        <h1 className="absolute bottom-4 md:bottom-10 right-6 md:right-8 text-white text-right w-full md:w-[10vw] text-xs md:text-sm lg:text-4xl font-semibold z-10 px-2 md:px-0">{title}</h1>
         
     </div>
   );
