@@ -41,7 +41,7 @@ export default function HomePage() {
         }}
         className={`absolute top-16 text-[16vw] text-center ${archivo.className} tracking-tight font-medium z-10 w-full h-[30vh]`}
       >
-        <h1>ABEL SHINE</h1>
+        <h1 className="text-[14vw] md:text-[16vw]">ABEL SHINE</h1>
       </motion.div>                {/* Splash Name */}
       
       <motion.div
@@ -58,7 +58,7 @@ export default function HomePage() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.0, duration: 1, type: "spring",  damping: 20, stiffness: 80}}
-        className="z-30 absolute bottom-[12vh] left-4 md:left-[15vw] w-[calc(100vw-2rem)] md:w-[70vw] flex flex-col md:flex-row md:items-end md:justify-between gap-8"
+        className="z-30 absolute bottom-[8vh] md:bottom-[12vh] left-4 md:left-[15vw] w-[calc(100vw-2rem)] md:w-[70vw] flex flex-col md:flex-row md:items-end md:justify-between gap-6 md:gap-8"
       >                                           {/** Container */}
         <div className="space-y-6 text-center md:text-left">
           <FlipWordsDemo />                         {/* Flip Words */}

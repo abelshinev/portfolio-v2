@@ -37,7 +37,7 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 1+ 0.3 * i }}
-            className="w-full md:w-[80vw] h-auto md:h-auto mx-auto flex flex-col md:flex-row items-center gap-4 md:gap-12 p-4 relative border-b border-white/5 pb-12"
+            className="w-full md:w-[80vw] h-auto md:h-auto mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-12 p-4 relative border-b border-white/5 pb-16 md:pb-12"
           >
             <div className="w-full md:w-[30vw] h-[30vh] md:h-[35vh] bg-zinc-900 rounded-md overflow-hidden relative border border-white/10 group">
               <Image  
@@ -48,7 +48,7 @@ export default function Projects() {
               />
             </div>
             <div className="space-y-4 w-full md:w-[45vw] text-center md:text-left">
-              <h2 className="text-3xl md:text-5xl font-bold tracking-tight">{project.name}</h2>
+              <h2 className="text-2xl md:text-5xl font-bold tracking-tight">{project.name}</h2>
               <p className="text-base md:text-lg text-zinc-400 leading-relaxed">{project.desc}</p>
               
               {/* Tags */}

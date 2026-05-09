@@ -92,9 +92,9 @@ export default function Footer() {
                         </div>
                     </div>
                     
-                    <div className='space-y-4'>
+                    <div className='space-y-4 w-full'>
                         <h3 className='text-xl font-semibold'>Social</h3>
-                        <ul className='flex flex-wrap justify-center gap-6'>
+                        <ul className='grid grid-cols-2 gap-4'>
                             <li className='text-zinc-500 hover:text-white transition duration-300'>
                                 <a href='https://www.linkedin.com/in/abel-shine-varghese-354492300/'>LinkedIn</a>
                             </li>
@@ -104,10 +104,12 @@ export default function Footer() {
                             <li className='text-zinc-500 hover:text-white transition duration-300'>
                                 <a href='https://leetcode.com/u/abelshinev/'>LeetCode</a>
                             </li>
+                            <li className='text-zinc-500 hover:text-white transition duration-300'>
+                                <a href='https://open.spotify.com/user/8z9w865lusgp7bzbsyyaznb05'>Spotify</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
-            </div>
         </motion.div>
     </section>
   )

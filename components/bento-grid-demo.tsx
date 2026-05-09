@@ -41,8 +41,8 @@ const Skeleton = ({ imgLink, title }: { imgLink?: string, title?: string }) => {
           fill
           className="object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-4">
-           <h3 className="text-xl font-bold text-white">{title}</h3>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-3 md:p-4">
+           <h3 className="text-lg md:text-xl font-bold text-white">{title}</h3>
         </div>
     </div>
   );

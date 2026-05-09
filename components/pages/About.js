@@ -59,8 +59,8 @@ export default function About({ id }) {
         </motion.div>         
         
         {/* Image DIV */}
-        <div className='border-2 border-white/10 bg-me bg-cover w-full md:w-[30vw] h-[50vh] md:h-[75vh] order-1 md:order-2 rounded-2xl grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl shadow-blue-900/20'/>
+        <div className='border-2 b order-white/10 bg-me bg-cover w-full md:w-[30vw] h-[50vh] md:h-[75vh] order-1 md:order-2 rounded-2xl grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl shadow-blue-900/20'/>
       </div>
-      </div>
+      
   )
 }
