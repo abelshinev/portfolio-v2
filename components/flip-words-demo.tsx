@@ -2,7 +2,7 @@ import React from "react";
 import { FlipWords } from "./ui/flip-word";
 
 export default function FlipWordsDemo() {
-  const words = ["UI/UX Designer", "Fullstack Developer", "ML Enthusiast",  "Basketball Player"];
+  const words = ["Scalable Web Apps", "Intelligent Systems", "Real-Time Experiences", "Modern Interfaces"];
 
   return (
     <div className="flex flex-row justify-start ">

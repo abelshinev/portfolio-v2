@@ -58,75 +58,98 @@ const Skeleton = ({ imgLink, title, icon }: { imgLink?: string, title?: string, 
 const items = [
   {
     title: "Python",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
-    header: <Skeleton />,
+    description: "Machine learning, automation, computer vision, backend systems, and forecasting pipelines.",
     icon: "/tech/icons/python.png",
     imgLink: "/tech/python.png"
   },
   {
-    title: "C++  ",
-    description: "Dive into the transformative power of technology.",
-    header: <Skeleton />,
+    title: "C++",
+    description: "Performance-focused programming, DSA, and systems-level problem solving.",
     icon: "/tech/icons/cpp.png",
     imgLink: "/tech/cpp.png"
   },
   {
     title: "JavaScript",
-    description: "Discover the beauty of thoughtful and functional design.",
-    header: <Skeleton />,
+    description: "Interactive frontend systems, real-time interfaces, and modern web applications.",
     icon: "/tech/icons/javascript.png",
     imgLink: "/tech/javascript.png"
   },
   {
+    title: "TypeScript",
+    description: "Type-safe scalable frontend and backend application development.",
+    icon: "/tech/icons/typescript.png",
+    imgLink: "/tech/typescript.png"
+  },
+  {
+    title: "React",
+    description: "Component-driven frontend architecture for performant user experiences.",
+    icon: "/tech/icons/react.png",
+    imgLink: "/tech/react.png"
+  },
+  {
+    title: "Next.js",
+    description: "Production-grade fullstack applications with optimized rendering and routing.",
+    icon: "/tech/icons/nextjs.png",
+    imgLink: "/tech/nextjs.png"
+  },
+  {
+    title: "Node.js",
+    description: "Backend services, APIs, authentication systems, and real-time processing.",
+    icon: "/tech/icons/nodejs.png",
+    imgLink: "/tech/nodejs.png"
+  },
+  {
+    title: "FastAPI",
+    description: "High-performance inference APIs and ML-powered backend services.",
+    icon: "/tech/icons/fastapi.png",
+    imgLink: "/tech/fastapi.png"
+  },
+  {
+    title: "PostgreSQL",
+    description: "Relational database design, querying, and scalable application data handling.",
+    icon: "/tech/icons/postgresql.png",
+    imgLink: "/tech/postgresql.png"
+  },
+  {
+    title: "MongoDB",
+    description: "Flexible document-based storage for modern backend architectures.",
+    icon: "/tech/icons/mongodb.png",
+    imgLink: "/tech/mongodb.png"
+  },
+  {
+    title: "TailwindCSS",
+    description: "Rapid responsive UI development with utility-first styling workflows.",
+    icon: "/tech/icons/tailwind.png",
+    imgLink: "/tech/tailwind.png"
+  },
+  {
     title: "GitHub",
-    description:
-    "Understand the impact of effective communication in our lives.",
-    header: <Skeleton />,
+    description: "Version control, collaboration workflows, CI/CD integration, and deployment pipelines.",
     icon: "/tech/icons/git.png",
     imgLink: "/tech/git2.png",
   },
   {
-    title: "ThreeJS",
-    description: "Join the quest for understanding and enlightenment.",
-    header: <Skeleton />,
-    icon: "/tech/icons/threejs.png",
-    imgLink: "/tech/threejs.png",
-    
+    title: "TensorFlow",
+    description: "Deep learning experimentation and intelligent model development.",
+    icon: "/tech/icons/tensorflow.png",
+    imgLink: "/tech/tensorflow.png"
   },
   {
-    title: "NextJS",
-    description: "Experience the thrill of bringing ideas to life.",
-    header: <Skeleton />,
-    icon: "/tech/icons/nextjs.png",
-    imgLink: "/tech/nextjs.png",
+    title: "PyTorch",
+    description: "Research-focused neural network development and training workflows.",
+    icon: "/tech/icons/pytorch.png",
+    imgLink: "/tech/pytorch.png"
   },
   {
-    title: "TypeScript",
-    description: "Experience the thrill of bringing ideas to life.",
-    header: <Skeleton />,
-    icon: "",
-    imgLink: "/tech/typescript.png",
+    title: "YOLOv8",
+    description: "Real-time computer vision detection systems and explainable AI workflows.",
+    icon: "/tech/icons/yolo.png",
+    imgLink: "/tech/yolo.png"
   },
   {
-    title: "Express",
-    description: "Discover the beauty of thoughtful and functional design.",
-    header: <Skeleton />,
-    icon: "/tech/icons/expressjs.png",
-    imgLink: "/tech/express.png",
-
-  },
-  {
-    title: "TypeScript",
-    description: "Experience the thrill of bringing ideas to life.",
-    header: <Skeleton />,
-    icon: "/tech/icons/typescript.png",
-    imgLink: "/tech/typescript.png",
-  },
-  {
-    title: "Java",
-    description: "Experience the thrill of bringing ideas to life.",
-    header: <Skeleton />,
-    icon: "/tech/icons/java.png",
-    imgLink: "/tech/java.png",
+    title: "OCI",
+    description: "Cloud deployment, infrastructure management, and scalable hosting workflows.",
+    icon: "/tech/icons/oci.png",
+    imgLink: "/tech/oci.png"
   },
 ];

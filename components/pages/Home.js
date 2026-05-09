@@ -62,14 +62,14 @@ export default function HomePage() {
       >                                           {/** Container */}
         <FlipWordsDemo />                         {/* Flip Words */}
         <p className="text-lg md:text-2xl text-zinc-400 px-4 md:px-0">
-          This is my portfolio <br className="hidden md:block"/>
-          Showcasing my projects, skills, and passion.
+          Fullstack developer and systems builder focused on scalable web platforms, <br className="hidden md:block"/>
+          intelligent applications, and real-time user experiences.
         </p>
         <motion.div   
             whileHover={{y: -10}} className="w-8"
         >                                         {/* For the Projects hotkey */}
             <Button className="mt-4 hover:bg-zinc-900 transition-colors">
-              <LucideRocket className="mr-2 h-5 w-5" /><a href="#projects"> View Projects </a>
+              <LucideRocket className="mr-2 h-5 w-5" /><a href="#projects"> See What I&apos;ve Built </a>
              
             </Button>
         </motion.div>
@@ -122,7 +122,7 @@ export default function HomePage() {
         animate={{opacity: 0.5}}
         transition={{delay:1.7}}>
         <a href="#about">
-          <h1>Scroll below to About</h1>
+          <h1>Explore my journey ↓</h1>
         </a>
           <IoIosArrowDown />
       </motion.div>

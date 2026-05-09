@@ -53,8 +53,8 @@ export default function Footer() {
                 {/* Mobile: Simplified layout */}
                 <div className='md:hidden flex flex-col items-center justify-center h-full space-y-8'>
                     <div className='text-center'>
-                        <h2 className="text-3xl font-semibold mb-4">Get in Touch</h2>
-                        <p className="text-base font-normal text-gray-300 mb-4">Let&apos;s get connected, reach out to me with my links.</p>
+                        <h2 className="text-3xl font-semibold mb-4">Let&apos;s Build Something</h2>
+                        <p className="text-base font-normal text-gray-300 mb-4">Open to collaborations, freelance work, internships, and ambitious ideas.</p>
                         <p className="text-base font-light text-white">
                             <a href="mailto:abelshinevarghese@gmail.com?subject=Hello&body=I'd like to connect.">abelshinevarghese@gmail.com</a>
                         </p>
@@ -74,6 +74,9 @@ export default function Footer() {
                                 <a href='https://open.spotify.com/user/8z9w865lusgp7bzbsyyaznb05'>Spotify</a>
                             </li>
                             <li className='text-lg text-white/70 hover:text-white transition duration-300'>
+                                <a href='https://leetcode.com/u/abelshinev/'>LeetCode</a>
+                            </li>
+                            <li className='text-lg text-white/70 hover:text-white transition duration-300'>
                                 <a href='/resume_final_uae.pdf' target='_blank'>Resume</a>
                             </li>
                         </ul>
@@ -82,8 +85,8 @@ export default function Footer() {
                 
                 {/* Desktop: Original Get in Touch and Social sections */}
                 <div className='hidden md:block absolute top-10 left-1/3'>
-                    <h2 className="text-5xl font-semibold mb-4">Get in Touch</h2>
-                    <p className="text-lg font-normal text-gray-300">Let&apos;s get connected, reach out to me with my links.</p>
+                    <h2 className="text-5xl font-semibold mb-4">Let&apos;s Build Something</h2>
+                    <p className="text-lg font-normal text-gray-300">Open to collaborations, freelance work, internships, and ambitious ideas.</p>
                     <p className="text-lg font-light mt-12 text-white">
                         <a href="mailto:abelshinevarghese@gmail.com?subject=Hello&body=I'd like to connect.">abelshinevarghese@gmail.com</a>
                     </p>
@@ -99,6 +102,9 @@ export default function Footer() {
                         </li>
                         <li className='text-xl text-white/70 hover:text-white transition duration-300'>
                             <a href='https://open.spotify.com/user/8z9w865lusgp7bzbsyyaznb05'>Spotify</a>
+                        </li>
+                        <li className='text-xl text-white/70 hover:text-white transition duration-300'>
+                            <a href='https://leetcode.com/u/abelshinev/'>LeetCode</a>
                         </li>
                         <li className='text-xl text-white/70 hover:text-white transition duration-300'>
                             <a href='/resume_final_uae.pdf' target='_blank'>Resume</a>

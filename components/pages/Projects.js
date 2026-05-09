@@ -23,7 +23,7 @@ export default function Projects() {
           animate={{fontSize: "clamp(2rem, 8vw, 6rem)"}}
           transition={{ delay: 0.45, duration: 0.3, ease: "easeOut", type: "spring", stiffness: 50, damping: 12}}
         >
-          My Projects
+          Featured Work
         </motion.h1>
       </motion.div>
 
@@ -37,22 +37,33 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 1+ 0.3 * i }}
-            className="w-full md:w-[80vw] h-auto md:h-[40vh] mx-auto flex flex-col md:flex-row items-center gap-4 md:gap-6 p-4 relative"
+            className="w-full md:w-[80vw] h-auto md:h-auto mx-auto flex flex-col md:flex-row items-center gap-4 md:gap-12 p-4 relative border-b border-white/5 pb-12"
           >
-            <div className="w-full md:w-[25vw] h-[30vh] md:h-[30vh] bg-zinc-700 rounded-md overflow-hidden relative order-1 md:order-1">
-              {/* Replace with Image if needed */}
+            <div className="w-full md:w-[30vw] h-[30vh] md:h-[35vh] bg-zinc-900 rounded-md overflow-hidden relative border border-white/10 group">
               <Image  
                 src={project.imgLink} 
-                alt={`project-${i}`} 
-                className="object-cover bg-zinc-800 rounded-lg p-4" 
+                alt={project.name} 
+                className="object-cover bg-zinc-950 p-2 grayscale group-hover:grayscale-0 transition-all duration-500" 
                 fill
               />
             </div>
-            <div className="space-y-2 w-full md:absolute md:right-12 md:w-[40vw] order-2 md:order-2 text-center md:text-left">
-              <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold py-3">{project.name}</h2>
-              <p className="text-base md:text-lg text-zinc-400">{project.desc}</p>
-              <p className="text-sm md:text-md text-zinc-500 pb-2">Duration: {project.time}</p>
-              <a href={project.repo} className="text-blue-400 underline text-base md:text-lg">View on GitHub</a>
+            <div className="space-y-4 w-full md:w-[45vw] text-center md:text-left">
+              <h2 className="text-3xl md:text-5xl font-bold tracking-tight">{project.name}</h2>
+              <p className="text-base md:text-lg text-zinc-400 leading-relaxed">{project.desc}</p>
+              
+              {/* Tags */}
+              <div className="flex flex-wrap gap-2 pt-2 justify-center md:justify-start">
+                {project.tags && project.tags.map((tag, j) => (
+                  <span key={j} className="text-[10px] md:text-xs uppercase tracking-widest px-2 py-1 bg-zinc-900 border border-white/10 text-zinc-300">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex flex-col md:flex-row items-center gap-4 pt-4">
+                <p className="text-sm text-zinc-500">Duration: {project.time}</p>
+                <a href={project.repo} className="text-white hover:text-blue-400 underline underline-offset-4 text-sm md:text-base font-medium transition-colors">View on GitHub</a>
+              </div>
             </div>
           </motion.li>
         ))}
