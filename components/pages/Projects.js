@@ -9,7 +9,7 @@ export default function Projects() {
   const ref = useRef(null);
 
   return (
-    <section id="projects" className="min-h-screen bg-zinc-950 text-white pt-20 px-4 md:px-10">
+    <section id="projects" className="min-h-screen bg-zinc-950 text-white pt-32 pb-20 px-4 md:px-10">
       <motion.div
         ref={ref}
         initial={{ y: 300, opacity: 0 }} // ~text-4xl

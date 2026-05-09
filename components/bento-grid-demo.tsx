@@ -29,28 +29,21 @@ export function BentoGridDemo() {
     </BentoGrid>
   );
 }
-const Skeleton = ({ imgLink, title, icon }: { imgLink?: string, title?: string, icon?: string }) => {
+const Skeleton = ({ imgLink, title }: { imgLink?: string, title?: string }) => {
   if (!imgLink) {
-    return <div className="relative flex flex-1 w-full h-[13vh] min-h-[6rem] rounded-sm bg-neutral-100"></div>
+    return <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-neutral-900/50"></div>
   }
   return (
-    <div className="flex flex-1 w-full h-[13vh] min-h-[6rem] rounded-sm bg-neutral-100">
+    <div className="flex flex-1 w-full h-full rounded-xl bg-neutral-900/50 overflow-hidden relative group">
         <Image 
           src={imgLink}
-          alt="tech logo"
-          width={600}
-          height={500}
-          className="object-cover"
+          alt={title || "tech logo"}
+          fill
+          className="object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500"
         />
-        {icon && <Image 
-          src={icon}
-          alt="icon"
-          width={80}
-          height={80}
-          className="absolute right-8 md:right-20 bottom-8 md:bottom-20 w-8 h-8 md:w-20 md:h-20"
-        />}
-        <h1 className="absolute bottom-4 md:bottom-10 right-6 md:right-8 text-white text-right w-full md:w-[10vw] text-xs md:text-sm lg:text-4xl font-semibold z-10 px-2 md:px-0">{title}</h1>
-        
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-4">
+           <h3 className="text-xl font-bold text-white">{title}</h3>
+        </div>
     </div>
   );
 

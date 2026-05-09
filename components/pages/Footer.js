@@ -33,83 +33,79 @@ export default function Footer() {
             transition={{ type: "spring", stiffness: 80, damping: 20 }}
             className="fixed bottom-0 left-0 w-full h-1/2 bg-zinc-900 text-white z-50 flex flex-col items-center justify-center"
         >
-            <div className='w-full md:w-[80vw] h-[40vh] relative px-4 md:px-0'> {/* Box parent div */}
-                {/* Desktop: Original layout */}
-                <h1 className='hidden md:block absolute top-[4vh] text-3xl font-medium'>Navigate</h1>
-                <ul className='hidden md:block space-y-2 absolute top-1/4 px-4'>
-                    {
-                        links.map((text, i) => (
-                            <li
-                                key={i}
-                                className='text-xl text-white/70 hover:text-white transition duration-300'
-                            >
-                                <a href={text.to}>{text.name}</a>
-                            </li>
-                        ))
-                    }
-                </ul>
-                <div className='hidden md:block h-[30vh] w-[0.15rem] left-[20vw] top-10 absolute bg-white' />
-                
-                {/* Mobile: Simplified layout */}
-                <div className='md:hidden flex flex-col items-center justify-center h-full space-y-8'>
-                    <div className='text-center'>
-                        <h2 className="text-3xl font-semibold mb-4">Let&apos;s Build Something</h2>
-                        <p className="text-base font-normal text-gray-300 mb-4">Open to collaborations, freelance work, internships, and ambitious ideas.</p>
-                        <p className="text-base font-light text-white">
-                            <a href="mailto:abelshinevarghese@gmail.com?subject=Hello&body=I'd like to connect.">abelshinevarghese@gmail.com</a>
-                        </p>
-                        <p className="text-sm font-light text-gray-300">+91 7898670716</p>
+                {/* Grid Layout for Footer Content */}
+                <div className="hidden md:grid grid-cols-4 gap-12 pt-12">
+                    {/* Column 1: Navigation */}
+                    <div className="space-y-6">
+                        <h1 className='text-2xl font-semibold text-white'>Navigate</h1>
+                        <ul className='space-y-3'>
+                            {links.map((text, i) => (
+                                <li key={i} className='text-lg text-zinc-500 hover:text-white transition duration-300'>
+                                    <a href={text.to}>{text.name}</a>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
-                    
-                    <div className='text-center'>
-                        <h3 className='text-lg font-semibold mb-2'>Social</h3>
-                        <ul className='space-y-2'>
-                            <li className='text-lg text-white/70 hover:text-white transition duration-300'>
+
+                    {/* Column 2 & 3: Get in Touch */}
+                    <div className="col-span-2 space-y-6">
+                        <h2 className="text-5xl font-bold tracking-tight text-white leading-tight">Let&apos;s Build Something</h2>
+                        <p className="text-xl text-zinc-400 max-w-md">Open to collaborations, freelance work, internships, and ambitious ideas.</p>
+                        <div className="space-y-2 pt-4">
+                            <p className="text-xl font-medium text-white hover:text-blue-400 transition-colors">
+                                <a href="mailto:abelshinevarghese@gmail.com">abelshinevarghese@gmail.com</a>
+                            </p>
+                            <p className="text-lg text-zinc-500">+91 7898670716</p>
+                        </div>
+                    </div>
+
+                    {/* Column 4: Social */}
+                    <div className="space-y-6">
+                        <h3 className='text-2xl font-semibold text-white'>Social</h3>
+                        <ul className='space-y-3'>
+                            <li className='text-lg text-zinc-500 hover:text-white transition duration-300'>
                                 <a href='https://www.linkedin.com/in/abel-shine-varghese-354492300/'>LinkedIn</a>
                             </li>
-                            <li className='text-lg text-white/70 hover:text-white transition duration-300'>
+                            <li className='text-lg text-zinc-500 hover:text-white transition duration-300'>
                                 <a href='https://github.com/abelshinev/'>Github</a>
                             </li>
-                            <li className='text-lg text-white/70 hover:text-white transition duration-300'>
-                                <a href='https://open.spotify.com/user/8z9w865lusgp7bzbsyyaznb05'>Spotify</a>
-                            </li>
-                            <li className='text-lg text-white/70 hover:text-white transition duration-300'>
+                            <li className='text-lg text-zinc-500 hover:text-white transition duration-300'>
                                 <a href='https://leetcode.com/u/abelshinev/'>LeetCode</a>
                             </li>
-                            <li className='text-lg text-white/70 hover:text-white transition duration-300'>
+                            <li className='text-lg text-zinc-500 hover:text-white transition duration-300'>
                                 <a href='/resume_final_uae.pdf' target='_blank'>Resume</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 
-                {/* Desktop: Original Get in Touch and Social sections */}
-                <div className='hidden md:block absolute top-10 left-1/3'>
-                    <h2 className="text-5xl font-semibold mb-4">Let&apos;s Build Something</h2>
-                    <p className="text-lg font-normal text-gray-300">Open to collaborations, freelance work, internships, and ambitious ideas.</p>
-                    <p className="text-lg font-light mt-12 text-white">
-                        <a href="mailto:abelshinevarghese@gmail.com?subject=Hello&body=I'd like to connect.">abelshinevarghese@gmail.com</a>
-                    </p>
-                    <p className="text-md font-light text-gray-300">+91 7898670716</p>
-                </div>
-                <div className='hidden md:block absolute top-1/4 right-[15vw]'>
-                    <ul className='space-y-2'>
-                        <li className='text-xl text-white/70 hover:text-white transition duration-300'>
-                            <a href='https://www.linkedin.com/in/abel-shine-varghese-354492300/'>LinkedIn</a>
-                        </li>
-                        <li className='text-xl text-white/70 hover:text-white transition duration-300'>
-                            <a href='https://github.com/abelshinev/'>Github</a>
-                        </li>
-                        <li className='text-xl text-white/70 hover:text-white transition duration-300'>
-                            <a href='https://open.spotify.com/user/8z9w865lusgp7bzbsyyaznb05'>Spotify</a>
-                        </li>
-                        <li className='text-xl text-white/70 hover:text-white transition duration-300'>
-                            <a href='https://leetcode.com/u/abelshinev/'>LeetCode</a>
-                        </li>
-                        <li className='text-xl text-white/70 hover:text-white transition duration-300'>
-                            <a href='/resume_final_uae.pdf' target='_blank'>Resume</a>
-                        </li>
-                    </ul>
+                {/* Mobile: Simplified layout */}
+                <div className='md:hidden flex flex-col items-center justify-center h-full space-y-12 text-center py-10'>
+                    <div className='space-y-4'>
+                        <h2 className="text-4xl font-bold">Let&apos;s Build Something</h2>
+                        <p className="text-lg text-zinc-400">Open to collaborations, freelance work, internships, and ambitious ideas.</p>
+                        <div className="space-y-2">
+                            <p className="text-lg font-medium text-white">
+                                <a href="mailto:abelshinevarghese@gmail.com">abelshinevarghese@gmail.com</a>
+                            </p>
+                            <p className="text-sm text-zinc-500">+91 7898670716</p>
+                        </div>
+                    </div>
+                    
+                    <div className='space-y-4'>
+                        <h3 className='text-xl font-semibold'>Social</h3>
+                        <ul className='flex flex-wrap justify-center gap-6'>
+                            <li className='text-zinc-500 hover:text-white transition duration-300'>
+                                <a href='https://www.linkedin.com/in/abel-shine-varghese-354492300/'>LinkedIn</a>
+                            </li>
+                            <li className='text-zinc-500 hover:text-white transition duration-300'>
+                                <a href='https://github.com/abelshinev/'>Github</a>
+                            </li>
+                            <li className='text-zinc-500 hover:text-white transition duration-300'>
+                                <a href='https://leetcode.com/u/abelshinev/'>LeetCode</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </motion.div>
