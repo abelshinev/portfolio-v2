@@ -21,7 +21,7 @@ export default function Projects() {
         <motion.h1
           initial={{ fontSize: "2rem" }}
           animate={{fontSize: "clamp(2rem, 8vw, 6rem)"}}
-          transition={{ delay: 0.45, duration: 0.3, ease: "easeOut", type: "spring", stiffness: 50, damping: 12}}
+          transition={{ delay: 0.1, duration: 0.3, ease: "easeOut", type: "spring", stiffness: 50, damping: 12}}
         >
           Featured Work
         </motion.h1>
@@ -36,7 +36,7 @@ export default function Projects() {
             initial={{ opacity: 0.1, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 1+ 0.3 * i }}
+            transition={{ duration: 0.6, delay: 0.1 * i }}
             className="w-full md:w-[80vw] h-auto md:h-auto mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-12 p-4 relative border-b border-white/5 pb-16 md:pb-12"
           >
             <div className="w-full md:w-[30vw] h-[30vh] md:h-[35vh] bg-zinc-900 rounded-md overflow-hidden relative border border-white/10 group">
