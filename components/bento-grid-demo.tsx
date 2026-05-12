@@ -2,15 +2,7 @@ import { cn } from "@/lib/utils";
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 import Image from "next/image";
-import {
-  IconArrowWaveRightUp,
-  IconBoxAlignRightFilled,
-  IconBoxAlignTopLeft,
-  IconClipboardCopy,
-  IconFileBroken,
-  IconSignature,
-  IconTableColumn,
-} from "@tabler/icons-react";
+
 
 export function BentoGridDemo() {
 
@@ -23,7 +15,7 @@ export function BentoGridDemo() {
           key={i}
           title={item.title}
           description={item.description}
-          header={<Skeleton imgLink={item.imgLink} title={item.title} icon={item.icon}/>}
+          header={<Skeleton imgLink={item.imgLink} title={item.title}/>}
         />
       ))}
     </BentoGrid>
