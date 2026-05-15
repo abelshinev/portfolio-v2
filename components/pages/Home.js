@@ -51,16 +51,16 @@ export default function HomePage() {
           duration: 0.6, 
           ease: "easeOut" 
         }}
-        className="absolute h-[3px] z-30 bg-white w-[90vw] md:w-[70vw] top-1/2"
+        className="absolute h-[3px] z-30 bg-white w-[90vw] md:w-[80vw] top-1/2"
       />                                        {/* Seperator Line above */}
       
       <motion.div                                 
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.0, duration: 1, type: "spring",  damping: 20, stiffness: 80}}
-        className="z-30 absolute bottom-[8vh] md:bottom-[12vh] left-4 md:left-[15vw] w-[calc(100vw-2rem)] md:w-[70vw] flex flex-col md:flex-row md:items-end md:justify-between gap-6 md:gap-8"
+        className="z-30 absolute bottom-[6vh] md:bottom-[6vh] left-4 md:left-[15vw] w-[calc(100vw-2rem)] md:w-[70vw] flex flex-col md:flex-row md:items-end md:justify-between gap-6 md:gap-8"
       >                                           {/** Container */}
-        <div className="space-y-6 text-center md:text-left">
+        <div className="space-y-4 text-center md:text-left">
           <FlipWordsDemo />                         {/* Flip Words */}
           <p className="text-lg md:text-2xl text-zinc-400 max-w-2xl leading-relaxed">
             Fullstack developer and systems builder focused on scalable web platforms, <br className="hidden md:block"/>
