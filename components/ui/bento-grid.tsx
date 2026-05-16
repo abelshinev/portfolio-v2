@@ -11,7 +11,7 @@ export const BentoGrid = ({
   const rows = React.Children.toArray(children);
 
   return (
-    <div className={cn("grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr", className)}>
+    <div className={cn("grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8 auto-rows-fr", className)}>
       {rows}
     </div>
   );
@@ -35,7 +35,7 @@ export const BentoGridItem = ({
         className
       )}
     >
-      <div className="w-full h-32 md:h-40 mb-2 md:mb-4 overflow-hidden rounded-lg">
+      <div className="w-full h-40 md:h-48 mb-2 md:mb-4 overflow-hidden rounded-lg">
         {header}
       </div>
       <div className="hidden md:block group-hover/bento:translate-x-2 transition duration-200">

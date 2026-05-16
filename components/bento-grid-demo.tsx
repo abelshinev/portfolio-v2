@@ -6,24 +6,22 @@ import Image from "next/image";
 
 export function BentoGridDemo() {
 
-  
-
   return (
-    <BentoGrid className="w-full">
+    <BentoGrid className="w-full px-4 md:px-16">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
           title={item.title}
           description={item.description}
-          header={<Skeleton imgLink={item.imgLink} title={item.title}/>}
+          header={<Skeleton imgLink={item.imgLink} title={item.title} icon={item.icon}/>}
         />
       ))}
     </BentoGrid>
   );
 }
-const Skeleton = ({ imgLink, title }: { imgLink?: string, title?: string }) => {
+const Skeleton = ({ imgLink, title, icon }: { imgLink?: string, title?: string, icon?: string | React.ReactNode }) => {
   if (!imgLink) {
-    return <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-neutral-900/50"></div>
+    return <div className="flex flex-1 w-full h-full min-h-[11rem] rounded-xl bg-neutral-900/50"></div>
   }
   return (
     <div className="flex flex-1 w-full h-full rounded-xl bg-neutral-900/50 overflow-hidden relative group">
@@ -34,11 +32,23 @@ const Skeleton = ({ imgLink, title }: { imgLink?: string, title?: string }) => {
           className="object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-3 md:p-4">
-           <h3 className="text-lg md:text-xl font-bold text-white">{title}</h3>
+           <div className="flex items-end justify-end gap-2">
+             {typeof icon === "string" ? (
+               <div className="relative w-10 h-10 md: mx-4">
+                 <Image 
+                   src={icon} 
+                   alt={title || "icon"} 
+                   fill 
+                   className="object-contain"
+                 />
+               </div>
+             ) : (
+               icon
+             )}
+           </div>
         </div>
     </div>
   );
-
 }
 const items = [
   {
@@ -66,22 +76,10 @@ const items = [
     imgLink: "/tech/typescript.png"
   },
   {
-    title: "React",
-    description: "Component-driven frontend architecture for performant user experiences.",
-    icon: "/tech/icons/react.png",
-    imgLink: "/tech/react.png"
-  },
-  {
     title: "Next.js",
     description: "Production-grade fullstack applications with optimized rendering and routing.",
     icon: "/tech/icons/nextjs.png",
     imgLink: "/tech/nextjs.png"
-  },
-  {
-    title: "Node.js",
-    description: "Backend services, APIs, authentication systems, and real-time processing.",
-    icon: "/tech/icons/nodejs.png",
-    imgLink: "/tech/nodejs.png"
   },
   {
     title: "FastAPI",
@@ -94,12 +92,6 @@ const items = [
     description: "Relational database design, querying, and scalable application data handling.",
     icon: "/tech/icons/postgresql.png",
     imgLink: "/tech/postgresql.png"
-  },
-  {
-    title: "MongoDB",
-    description: "Flexible document-based storage for modern backend architectures.",
-    icon: "/tech/icons/mongodb.png",
-    imgLink: "/tech/mongodb.png"
   },
   {
     title: "TailwindCSS",
@@ -130,11 +122,5 @@ const items = [
     description: "Real-time computer vision detection systems and explainable AI workflows.",
     icon: "/tech/icons/yolo.png",
     imgLink: "/tech/yolo.png"
-  },
-  {
-    title: "OCI",
-    description: "Cloud deployment, infrastructure management, and scalable hosting workflows.",
-    icon: "/tech/icons/oci.png",
-    imgLink: "/tech/oci.png"
   },
 ];
