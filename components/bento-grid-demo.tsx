@@ -7,7 +7,7 @@ import Image from "next/image";
 export function BentoGridDemo() {
 
   return (
-    <BentoGrid className="w-full px-4 md:px-16">
+    <BentoGrid className="w-full px-4 py-10 md:px-16">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
