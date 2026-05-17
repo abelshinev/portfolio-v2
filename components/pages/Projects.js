@@ -43,7 +43,7 @@ export default function Projects() {
               <Image  
                 src={project.imgLink} 
                 alt={project.name} 
-                className="object-cover bg-zinc-950 p-2 grayscale group-hover:grayscale-0 transition-all duration-500" 
+                className="object-cover bg-zinc-950 p-2 group-hover:grayscale-0 transition-all duration-500" 
                 fill
               />
             </div>
