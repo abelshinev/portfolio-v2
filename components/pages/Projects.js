@@ -45,6 +45,7 @@ export default function Projects() {
                 alt={project.name} 
                 className="object-cover bg-zinc-950 p-2 group-hover:grayscale-0 transition-all duration-500" 
                 fill
+                sizes="(max-width: 768px) 100vw, 30vw"
               />
             </div>
             <div className="space-y-4 w-full md:w-[45vw] text-center md:text-left">
@@ -54,7 +55,7 @@ export default function Projects() {
               {/* Tags */}
               <div className="flex flex-wrap gap-2 pt-2 justify-center md:justify-start">
                 {project.tags && project.tags.map((tag, j) => (
-                  <span key={j} className="text-[10px] md:text-xs uppercase tracking-widest px-2 py-1 bg-zinc-900 border border-white/10 text-zinc-300">
+                  <span key={j} className="text-[10px] md:text-xs uppercase tracking-widest px-2 py-1 bg-zinc-900 rounded-sm border border-white/10 text-zinc-300">
                     {tag}
                   </span>
                 ))}

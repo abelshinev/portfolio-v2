@@ -29,6 +29,7 @@ const Skeleton = ({ imgLink, title, icon }: { imgLink?: string, title?: string, 
           src={imgLink}
           alt={title || "tech logo"}
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-3 md:p-4">
@@ -39,6 +40,7 @@ const Skeleton = ({ imgLink, title, icon }: { imgLink?: string, title?: string, 
                    src={icon} 
                    alt={title || "icon"} 
                    fill 
+                   sizes="40px"
                    className="object-contain"
                  />
                </div>
