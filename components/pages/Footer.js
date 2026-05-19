@@ -73,7 +73,7 @@ export default function Footer() {
                                 <a href='https://leetcode.com/u/abelshinev/'>LeetCode</a>
                             </li>
                             <li className='text-lg text-zinc-500 hover:text-white transition duration-300'>
-                                <a href='/resume_final_uae.pdf' target='_blank'>Resume</a>
+                                <a href='/abel_fl_resume.pdf' target='_blank'>Resume</a>
                             </li>
                         </ul>
                     </div>
