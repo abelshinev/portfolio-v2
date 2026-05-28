@@ -102,7 +102,7 @@ export default function Footer() {
                                 <a href='https://github.com/abelshinev/'>Github</a>
                             </li>
                             <li className='text-zinc-500 hover:text-white transition duration-300'>
-                                <a href='https://leetcode.com/u/abelshinev/'>LeetCode</a>
+                                <a href='https://leetcode.com/u/abelfr_/'>LeetCode</a>
                             </li>
                             <li className='text-zinc-500 hover:text-white transition duration-300'>
                                 <a href='https://open.spotify.com/user/8z9w865lusgp7bzbsyyaznb05'>Spotify</a>
