@@ -102,7 +102,7 @@ export default function Services() {
               {service.examples.map((example) => (
                 <span
                   key={example}
-                  className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs text-white/50"
+                  className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-md text-white/50 justify-center inline-flex items-center gap-2 "
                 >
                   {example}
                 </span>

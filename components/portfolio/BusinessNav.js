@@ -15,13 +15,13 @@ export default function BusinessNav() {
       initial={{ opacity: 0, y: -10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.45, ease: "easeOut" }}
-      className="sticky top-0 z-50 w-full border-b border-white/10 bg-black/90 backdrop-blur-md"
+      className="fixed top-0 z-50 w-full border-b border-white/10 bg-black/90 backdrop-blur-md"
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
         <div className="flex items-center gap-2 text-sm text-white">
-          <span className="font-semibold">Abel Shine</span>
-          <span className="text-white/40">/</span>
-          <span className="text-slate-400">For Business</span>
+          <span className="font-semibold text-lg">Abel Shine</span>
+          <span className="text-white/40 text-lg">/</span>
+          <span className="text-slate-400 text-lg">Portfolio</span>
         </div>
 
         <div className="flex items-center gap-4">
