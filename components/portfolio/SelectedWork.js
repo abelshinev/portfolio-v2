@@ -3,6 +3,64 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+const projects = [
+  {
+    title: "VantaBlock",
+    type: "AI · Browser Security",
+    pitch:
+      "Behavior-based bot and agent detection system that identifies automated browser agents using interaction dynamics instead of static fingerprinting. Built with a real-time FastAPI inference pipeline and Chrome extension enforcement layer.",
+    tech: ["FastAPI", "ML", "Browser Instrumentation", "Plasmo", "Python"],
+    github: "https://github.com/lvb05/vantablock",
+    image: "/projects/vantablock.png",
+    swap: false,
+  },
+  {
+    title: "Spoiler Alert — Food Spoilage Monitor",
+    type: "IoT · Computer Vision",
+    pitch:
+      "IoT-powered food freshness monitoring platform combining computer vision, embedded ML on Raspberry Pi, and time-series forecasting to predict spoilage and safe consumption windows.",
+    tech: ["Raspberry Pi", "Embedded ML", "Flutter", "Time-Series Forecasting"],
+    github: "https://github.com/abelshinev/SpoilerAlert",
+    image: "/projects/spoilage.png",
+    swap: true,
+  },
+  {
+    title: "Airport Baggage Threat Detection",
+    type: "Computer Vision · Safety",
+    pitch:
+      "Explainable computer vision system for detecting prohibited items in X-ray scans using YOLOv8 and Grad-CAM visualization. Built for safety-critical environments with high recall and transparent attention mapping.",
+    tech: ["YOLOv8", "PyTorch", "Grad-CAM", "Computer Vision"],
+    github: "https://github.com/abelshinev/Grad-CAMeL-detection",
+    image: "/projects/baggage.png",
+    swap: false,
+  },
+  {
+    title: "Fit Forecaster — Gym Traffic Prediction",
+    type: "ML · Forecasting",
+    pitch:
+      "Ensemble machine learning platform that forecasts gym congestion patterns and recommends optimal workout timeslots. Built with XGBoost pipelines, Streamlit dashboards, and real traffic data.",
+    tech: ["XGBoost", "Streamlit", "ML Pipelines", "Python"],
+    github: "https://github.com/abelshinev/fit_forecaster",
+    image: "/projects/fit-forecaster.png",
+    swap: true,
+  },
+  {
+    title: "Interactive 3D Portfolio",
+    type: "Frontend · 3D",
+    pitch:
+      "Immersive motion-driven portfolio experience built with React, Three.js, and TailwindCSS. Features real-time 3D interactions and GPU-accelerated animations in the browser.",
+    tech: ["React", "Three.js", "TailwindCSS", "Framer Motion"],
+    github: "https://github.com/abelshinev/portfolio_proj",
+    image: "/projects/portfolio.png",
+    swap: false,
+  },
+];
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0 },
+};
+
 export default function SelectedWork() {
   return (
     <section className="max-w-5xl mx-auto px-6 py-24">

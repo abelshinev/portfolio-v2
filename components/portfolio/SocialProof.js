@@ -2,6 +2,42 @@
 
 import { motion } from "framer-motion";
 
+const clients = [
+  {
+    name: "Zeyno Creative",
+    role: "Brand & Web Developer",
+    description:
+      "AI-enabled brand developer delivering scalable web solutions, architecture, and deployment.",
+    tag: "Freelance · Active",
+  },
+  {
+    name: "QBytez Infolabs",
+    role: "Fullstack Developer",
+    description:
+      "Development and delivery of client-facing web products and internal systems.",
+    tag: "Contract",
+  },
+  {
+    name: "SAE Overdrive",
+    role: "Platform Developer",
+    description:
+      "Built and deployed the team platform for a collegiate Formula Student racing organization.",
+    tag: "Student Org",
+  },
+  {
+    name: "SahRK Himji Now",
+    role: "Technical Collaborator",
+    description:
+      "Technical support and product development for a media and news platform.",
+    tag: "Collaboration",
+  },
+];
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
+
 export default function SocialProof() {
   return (
     <section className="max-w-5xl mx-auto px-6 py-24">

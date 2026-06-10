@@ -2,6 +2,62 @@
 
 import { motion } from "framer-motion";
 
+const services = [
+  {
+    number: "01",
+    name: "Fullstack Development",
+    description:
+      "Production-ready web applications built with modern frameworks, responsive design, backend APIs, and scalable databases. From landing pages to full SaaS platforms.",
+    examples: [
+      "SaaS Platforms",
+      "Client Dashboards",
+      "Internal Tools",
+      "Business Websites",
+      "REST APIs",
+      "Database Design",
+    ],
+  },
+  {
+    number: "02",
+    name: "AI & Machine Learning",
+    description:
+      "Custom ML-powered applications, forecasting systems, computer vision pipelines, and intelligent automation. Built to run in production, not just Jupyter notebooks.",
+    examples: [
+      "Gym Traffic Forecaster",
+      "Food Spoilage Detection",
+      "X-Ray Threat Detection",
+      "Behavior Analytics",
+      "Time-Series Forecasting",
+    ],
+  },
+  {
+    number: "03",
+    name: "Technical Product Development",
+    description:
+      "From idea validation to live deployment. I can architect and build complete products end-to-end — backend, frontend, ML layer, deployment infrastructure.",
+    examples: [
+      "VantaBlock",
+      "Construction RFI Tools",
+      "Assessment Platforms",
+      "Browser Extensions",
+      "IoT Systems",
+    ],
+  },
+];
+
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0 },
+};
 
 export default function Services() {
   return (
