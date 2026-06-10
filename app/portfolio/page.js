@@ -3,10 +3,10 @@ import HeroB from "../../components/portfolio/HeroB";
 import SocialProof from "../../components/portfolio/SocialProof";
 import Services from "../../components/portfolio/Services";
 import SelectedWork from "../../components/portfolio/SelectedWork";
-import Process from "../../components/portfolio/Process";
-import Expertise from "../../components/portfolio/Expertise";
-import AboutB from "../../components/portfolio/AboutB";
-import ContactB from "../../components/portfolio/ContactB";
+import Process from "../../components/business/Process";
+import Expertise from "../../components/business/Expertise";
+import AboutB from "../../components/business/AboutB";
+import ContactB from "../../components/business/ContactB";
 
 export default function BusinessPage() {
   return (
