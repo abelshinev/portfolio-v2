@@ -23,7 +23,7 @@ export default function Navbar() {
     return (
         <div className={`fixed w-full h-16 md:h-20 top-0 text-white ${inter.className} px-4 md:px-8 lg:px-12 flex items-center justify-between z-30 bg-black/10 backdrop-blur-sm`}>
             <h1 className="text-lg md:text-xl lg:text-2xl">
-                <a href='#'>Coverslide</a>
+                <a href='/'>Coverslide</a>
             </h1>
             
             {/* Desktop Menu */}
